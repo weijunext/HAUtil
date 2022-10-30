@@ -2,9 +2,7 @@
 前端工具类库
 
 ## 安装下载
-https://github.com/weijunext/haUtil/release    
-
-
+https://github.com/weijunext/HAUtil/tree/main/release 
 ## 目录
 
 ```  
