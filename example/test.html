@@ -2,10 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>example</title>
   </head>
   <body>
-    <p>fast-cache test</p >
+    <p>example</p >
     <script src="../release/bundle.js"></script>
+    <script>
+      var FC = window.FastCache;
+      var cache = new FC();
+      cache.set("a", 100);
+      alert(cache.get("a"));
+    </script>
   </body>
 </html>
