@@ -1,0 +1,22 @@
+{
+  "name": "xutil",
+  "version": "0.0.1",
+  "description": "前端工具库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weijunext/xUtil.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "weijun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weijunext/xUtil/issues"
+  },
+  "homepage": "https://github.com/weijunext/xUtil#readme"
+}
