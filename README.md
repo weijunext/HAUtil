@@ -1,8 +1,8 @@
-# xUtil
+# haUtil
 前端工具类库
 
 ## 安装下载
-https://github.com/weijunext/xUtil/release    
+https://github.com/weijunext/haUtil/release    
 
 
 ## 目录

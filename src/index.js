@@ -1,4 +1,4 @@
-class XUtil {
+class HAUtil {
   constructor() {
     this.list = {};
   }
@@ -10,4 +10,4 @@ class XUtil {
   }
 }
 
-window.XUtil = XUtil;
+window.HAUtil = HAUtil;

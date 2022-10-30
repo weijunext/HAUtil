@@ -1,5 +1,5 @@
 {
-  "name": "xutil",
+  "name": "haUtil",
   "version": "0.0.1",
   "description": "前端工具库",
   "main": "src/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weijunext/xUtil.git"
+    "url": "git+https://github.com/weijunext/HAUtil.git"
   },
   "keywords": [
     "utils"
@@ -18,9 +18,9 @@
   "author": "weijun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/weijunext/xUtil/issues"
+    "url": "https://github.com/weijunext/HAUtil/issues"
   },
-  "homepage": "https://github.com/weijunext/xUtil#readme",
+  "homepage": "https://github.com/weijunext/HAUtil#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
