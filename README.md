@@ -2,7 +2,7 @@
 前端工具类库
 
 ## 安装下载
-https://github.com/weijunext/HAUtil/tree/main/release 
+https://www.npmjs.com/package/hautil
 ## 目录
 
 ```  
