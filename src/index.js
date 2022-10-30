@@ -1,4 +1,4 @@
-class FastCache {
+class XUtil {
   constructor() {
     this.list = {};
   }
@@ -10,4 +10,4 @@ class FastCache {
   }
 }
 
-window.FastCache = FastCache;
+window.XUtil = XUtil;
