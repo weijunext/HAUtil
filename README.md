@@ -89,4 +89,3 @@ const debounce = getDebounce()
 - [x] 发布npm包
 - [ ] 完善测试用例
 - [ ] 用gitbook完善使用文档
-- [ ] 参加视频会议
