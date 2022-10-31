@@ -1,13 +1,14 @@
-class HAUtil {
-  constructor() {
-    this.list = {};
-  }
-  set(key, value) {
-    this.list[key] = value;
-  }
-  get(key) {
-    return this.list[key];
-  }
-}
+/**
+ * webpack打包入口文件  
+ * @example 自动引入子目录下所有js文件
+ */
+ 
+ let moduleExports = {};
+const r = require.context('./haUtil/', true, /\.js$/);
 
-window.HAUtil = HAUtil;
+for (const key of r.keys()) {
+  let attr = key.substring(key.lastIndexOf('/') + 1, key.lastIndexOf('.'));
+  moduleExports[attr] = r(key)
+}
+module.exports = moduleExports;
+ 
