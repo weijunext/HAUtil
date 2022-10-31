@@ -1,6 +1,6 @@
 {
   "name": "hautil",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "前端工具库",
   "main": "src/index.js",
   "scripts": {

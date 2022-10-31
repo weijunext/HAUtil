@@ -1,13 +1,18 @@
+![图片](./assets/hautil.png)
+
 # haUtil
-前端工具类库
+
+前端工具库
 
 ## 安装下载
-https://www.npmjs.com/package/hautil
+
+1、直接下载 `min` 目录下的`hautil.min.js`使用
+2、使用npm安装
 ## 目录
 
 ```  
 │
-├── min                              # min包
+├── assets                           # 项目资源
 ├── test                             # 单元测试用例
 ├── .babelrc                         # babel配置
 ├── .gitignore                       # gitignore
