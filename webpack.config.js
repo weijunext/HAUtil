@@ -1,4 +1,5 @@
 const path = require('path')
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const pkg = require('./package.json')
 const rootPath = path.resolve(__dirname, './')
@@ -7,8 +8,8 @@ const config = {
   mode: 'production',
   entry: path.resolve(rootPath, 'src', 'index.js'),
   output: {
-    filename: `${pkg.name}.min.js`,
-    path: path.resolve(rootPath, 'min'),
+    filename: 'index.js',
+    path: path.resolve(rootPath, 'dist'),
     library: `${pkg.name}`,
     libraryTarget: "umd"
   },
@@ -18,7 +19,31 @@ const config = {
       exclude: /node_modules/,
       loader: "babel-loader"
     }]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname + '/src/haUtil'),
+        to: './',
+      },
+      {
+        from: path.resolve(__dirname + '/assets/*'),
+        to: './',
+      },
+      {
+        from: path.resolve(__dirname + '/LICENSE'),
+        to: './',
+      },
+      {
+        from: path.resolve(__dirname + '/package.json'),
+        to: './',
+      },
+      {
+        from: path.resolve(__dirname + '/README.md'),
+        to: './',
+      },
+    ]),
+  ]
 }
 
 module.exports = config;
