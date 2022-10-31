@@ -1,5 +1,6 @@
 const path = require('path')
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const pkg = require('./package.json')
 const rootPath = path.resolve(__dirname, './')
@@ -43,7 +44,14 @@ const config = {
         to: './',
       },
     ]),
-  ]
+  ],
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        test: /\.js(\?.*)?$/i,
+      }),
+    ],
+  },
 }
 
 module.exports = config;
