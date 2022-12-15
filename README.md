@@ -24,7 +24,7 @@ yarn add hautil
 ```
 完整引入
 ```
-const hautils = require('hautil')
+const hautil = require('hautil')
 const debounce = hautil.debounce()
 ```
 按需引入（推荐）
